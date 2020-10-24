@@ -13,8 +13,8 @@ const newsList = document.querySelector(".news-list");
 //
 
 const apiData = {
-  url: "http://newsapi.org/v2/sources?",
-  lan: "language=en&",
+  url: "http://newsapi.org/v2/top-headlines?",
+  lan: "country=us&language=en&",
   cate: "",
   apiK: "apiKey=3680b889e3fe4c128f994a74da6f98db",
 
@@ -38,16 +38,20 @@ function buttonHandler(topic) {
 
   const {url, lan, cate, apiK} = apiData;
   const apiUrl = `${proxyUrl}${url}${lan}${cate}${apiK}`;
+  console.log(apiUrl);
+
   fetch(apiUrl)
       .then((result) => result.json())
-      .then((data) => {
-      data.sources.forEach((article) => {
+      .then((data) => { 
+      data.articles.forEach((article) => {
+        console.log(article);
         let li = document.createElement('li');
         let a = document.createElement('a');
         a.setAttribute('href', article.url);
         a.setAttribute('target', '_blank');
         a.setAttribute('rel', 'noopener noreferrer');
         a.textContent = article.title;
+        console.log(article.title);
         console.log(a);
         li.appendChild(a);
         newsList.appendChild(li);

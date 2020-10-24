@@ -8,8 +8,16 @@
   top: 10%;
   left: 10%;
 }
+div {
+  background-color: white;
+}
 .news-container {
   position: relative;
+  top: 50px;
+}
+.news-list {
+  position: relative;
+  top: 50x;
 }
 .container {
   position: relative;
@@ -21,14 +29,25 @@
   text-align: center;
   color: red;
 }
-div {
-  background-color: green;
+.SET {
+  position: relative;
+  top: -12vh;
+  color: rgb(10,43,100);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+  font-style: oblique;
+}.SET span{
+  position: relative;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
 }
-/* a {
-  background-color: red;
-} */
 .button-container {
   position: relative;
+  top: -15vh;
 }
 .b-plus {
   margin: auto;
@@ -65,4 +84,7 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer {
+  position: absolute;
 }
