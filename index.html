@@ -3,23 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon and text for the tab -->
+    <title>SET - Sports, entertainment, and technology</title>
+    <link rel="shortcut icon" href="pictures/newsicon.png" />
+    <!-- ------------------------- -->
+
+    <!-- Local and imported css stylesheets -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="scroll.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
     />
-    <title>SET - Sports, entertainment, and technology</title>
-    <link rel="shortcut icon" href="pictures/newsicon.png" />
+    <!-- ------------------------- -->
   </head>
 
   <body>
-    <header>
-      <h1>BREAKING NEWS</h1>
-      <h5>In Sports, Entertainment, and Technology</h5>
+    <header id="content" style="width: 100%;">
+      <div class="scroll-left">
+        <p>BREAKING NEWS in Sports, Entertainment, and Technology</p>
+      </div>
     </header>
-    <div class="API"></div>
-    <script src="main.js"></script>
+    <!-- <div class="API"></div>
+    <script src="main.js"></script> -->
 
+    <section>
+      <h5>SET!<span>news</span></h5>
+    </section>
+
+    <main class="button-container" style="background-color: lightblue">
+      <div class="wrapper" style="background-color: white">
+        <button onclick="buttonHandler('sports')" class="b-plus b-sports">
+          Sports
+        </button>
+        <button
+          onclick="buttonHandler('entertainment')"
+          class="b-plus b-entertainment"
+        >
+          Entertainment
+        </button>
+        <button
+          onclick="buttonHandler('technology')"
+          class="b-plus b-technology"
+        >
+          Technology
+        </button>
+      </div>
+    </main>
+
+    <body class="search" action="">
+      <input class="input" type="text" />
+      <label for="News"></label>
+      <br />
+      <input type="submit" onclick="retrieve()" />
+    </body>
+
+    <div
+      class="news-container"
+      style="
+        background-color: aliceblue;
+        position: absolute;
+        top: 50px;
+        z-index: 1;
+      "
+    >
+      <ul class="news-list"></ul>
+    </div>
+
+    <footer>
+      <p class="footnote">Created by Rong Feng Ye © October 2020</p>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/Rongfengye/CaptialOneChallengeNews"
+      >
+        Github
+      </a>
+      <a target="_blank" rel="noopener noreferrer" href="https://newsapi.org/">
+        Powered by NewsAPI
+      </a>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="main.js"></script>
+    <!-- ------------------------- -->
     <!-- <button type="button">
       GO TO SPORTS
     </button> -->
