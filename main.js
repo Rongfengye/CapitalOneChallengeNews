@@ -53,7 +53,7 @@ function buttonHandler(topic) {
         a.textContent = article.title;
         i.setAttribute("style", "float:left; width: 100px; height: 50px;");
         i.setAttribute("src", `${article.urlToImage}`);
-        i.setAttribute("alt", "News-image");
+        i.setAttribute("alt", "no image available");
         D.className = "news-links";
         D.appendChild(a);
         D.appendChild(i);

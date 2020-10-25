@@ -32,7 +32,7 @@
       <h5 class="SET">SET!<span> NEWS</span></h5>
     </section>
 
-    <main class="button-container" >
+    <main class="button-container">
       <p class="choose">Choose a news category to display:</p>
       <div class="wrapper" style="background-color: white">
         <button onclick="buttonHandler('sports')" class="b-plus b-sports">
@@ -62,9 +62,12 @@
     </body>
 
     <main class="search-container" style="position: relative; top: -5vh">
-      <h3 style="color: rgb(10,43,100);"> Breaking News</h3>
-      <div class="news-container">
-        <ul class="news-list" style="background-color: rgb(241,241,241)"></ul>
+      <h3 class="topic-statement" style="color: rgb(10, 43, 100)">
+        Breaking News
+        <span style="font-size: 12px"> (May take a few seconds to load)</span>
+      </h3>
+      <div id="news-container">
+        <ul class="news-list" style="background-color: rgb(241, 241, 241)"></ul>
       </div>
     </main>
 
@@ -77,7 +80,7 @@
       >
         Github
       </a>
-      <br>
+      <br />
       <a target="_blank" rel="noopener noreferrer" href="https://newsapi.org/">
         Powered by NewsAPI
       </a>

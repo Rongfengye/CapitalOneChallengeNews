@@ -97,11 +97,23 @@ div {
   border: 1px solid rgb(97,97,97);
   background-color: rgb(241,241,241);
 }
+a:hover, a:link, a:active
+{
+  text-decoration: none;
+  color: rgb(10,43,100);
+}
 .news-links {
   list-style-type: none; 
   padding-top: 20px; 
   margin: 50px; 
   background-color: rgb(241,241,241);
+}
+a:visited {
+  text-decoration: none;
+  color: rgb(102,0,153);
+}
+a:hover {
+  text-decoration: underline;
 }
 .footer {
   position: absolute;
