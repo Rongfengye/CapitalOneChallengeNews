@@ -25,7 +25,7 @@ function buttonHandler(topic) {
   } else if (topic === "entertainment") {
     apiData.cate = eKey;
     document.getElementById("topic-image").innerHTML =
-      "<img src='pictures/entertainment-banner.jpg' alt='sportpic' width='90%'/>";
+      "<img src='pictures/entertainment-banner.jpg' alt='sportpic' width='100%'/>";
   } else if (topic === "technology") {
     apiData.cate = techKey;
     document.getElementById("topic-image").innerHTML =
