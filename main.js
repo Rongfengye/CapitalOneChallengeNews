@@ -43,7 +43,7 @@ function buttonHandler(topic) {
     .then((data) => {
       data.articles.forEach((article) => {
         console.log(article);
-        let D = document.createElement("div");
+        let D = document.createElement("li");
         let a = document.createElement("a");
         let i = document.createElement("img");
         a.setAttribute("href", article.url);
@@ -54,7 +54,7 @@ function buttonHandler(topic) {
         i.setAttribute("style", "float:left; width: 100px; height: 50px;");
         i.setAttribute("src", `${article.urlToImage}`);
         i.setAttribute("alt", "News-image");
-        D.setAttribute("style", "padding-top: 20px; margin: 50px;");
+        D.className = "news-links";
         D.appendChild(a);
         D.appendChild(i);
         console.log(D);

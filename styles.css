@@ -93,7 +93,15 @@ div {
   justify-content: center;
 }
 .search-container {
-  border: 1px solid black;
+  border-radius: 15px;
+  border: 1px solid rgb(97,97,97);
+  background-color: rgb(241,241,241);
+}
+.news-links {
+  list-style-type: none; 
+  padding-top: 20px; 
+  margin: 50px; 
+  background-color: rgb(241,241,241);
 }
 .footer {
   position: absolute;
