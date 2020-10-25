@@ -30,7 +30,7 @@ function buttonHandler(topic) {
   newsList.innerHTML = ''
 
   const {url, lan, cate, apiK} = apiData;
-  const apiUrl = `${proxyUrl}${url}${lan}${cate}${apiK}`;
+  const apiUrl = `${url}${lan}${cate}${apiK}`;
   console.log(apiUrl);
 
   fetch(apiUrl)
