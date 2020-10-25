@@ -32,8 +32,8 @@
       <h5 class="SET">SET!<span> NEWS</span></h5>
     </section>
 
-    <main class="button-container" style="background-color: lightblue">
-      <p class="choose">Choose a news category to display: </p>
+    <main class="button-container" >
+      <p class="choose">Choose a news category to display:</p>
       <div class="wrapper" style="background-color: white">
         <button onclick="buttonHandler('sports')" class="b-plus b-sports">
           Sports
@@ -54,14 +54,14 @@
     </main>
 
     <body class="search" action="">
-      <div class="topic-image"></div>
+      <div id="topic-image" style="position: relative; top: -10vh"></div>
       <!-- <input class="input" type="text" />
       <label for="News"></label>
       <br />
       <input type="submit" onclick="retrieve()" /> -->
     </body>
 
-    <main class="search-container">
+    <main class="search-container" style="position: relative; top: -5vh">
       <h3>Breaking News</h3>
       <div class="news-container">
         <div class="news-list"></div>
