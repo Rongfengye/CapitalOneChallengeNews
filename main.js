@@ -10,7 +10,12 @@ const apiData = {
   lan: "country=us&language=en&",
   cate: "",
   apiK: "apiKey=3680b889e3fe4c128f994a74da6f98db",
+}
 
+const banners = {
+  sportB = "pictures/sport-banner.jpg",
+  eB = "pictures/entertainment-banner.jpg",
+  techB = "pictures/tech-banner.jpg"
 }
 
 const proxyUrl = "http://cors-anywhere.herokuapp.com/"
