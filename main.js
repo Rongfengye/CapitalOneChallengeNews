@@ -2,15 +2,8 @@
 const searchFrom = document.querySelector(".search");
 const input = document.querySelector(".input");
 const newsList = document.querySelector(".news-list");
+const topicImage = document.querySelector(".topic-image");
 //searchFrom.addEventListener("submit", retrieve);
-
-// function retrieve() {
-//   // e.preventDefault();
-//   let topic = input.value;
-//   console.log(topic);
-// }
-
-//
 
 const apiData = {
   url: "http://newsapi.org/v2/top-headlines?",
@@ -45,16 +38,24 @@ function buttonHandler(topic) {
       .then((data) => { 
       data.articles.forEach((article) => {
         console.log(article);
-        let li = document.createElement('li');
+        let D = document.createElement('div');
         let a = document.createElement('a');
+        let i = document.createElement('img');
         a.setAttribute('href', article.url);
         a.setAttribute('target', '_blank');
         a.setAttribute('rel', 'noopener noreferrer');
+        a.setAttribute('style', 'margin-left: 15px;')
         a.textContent = article.title;
-        console.log(article.title);
-        console.log(a);
-        li.appendChild(a);
-        newsList.appendChild(li);
+        i.setAttribute('style', 'float:left; width: 100px; height: 50px;');
+        i.setAttribute('src', `${article.urlToImage}`);
+        i.setAttribute('alt', "News-image");
+        D.setAttribute('style', 'padding-top: 20px; margin: 50px;');
+        //D.style.listStyleImage = article.urlToImage;
+        //li.setAttribute('list-style-image', `url(${article.urlToImage})`);
+        D.appendChild(a);
+        D.appendChild(i);
+        console.log(D);
+        newsList.appendChild(D);
       })
     })
 

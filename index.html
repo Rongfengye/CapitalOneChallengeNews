@@ -22,19 +22,18 @@
   <body>
     <header>
       <div class="scroll-left">
-        <p>
-          BREAKING NEWS in Sports, Entertainment, and Technology
-        </p>
+        <p>BREAKING NEWS in Sports, Entertainment, and Technology</p>
       </div>
     </header>
     <!-- <div class="API"></div>
     <script src="main.js"></script> -->
 
-    <section style="position: relative;">
+    <section style="position: relative">
       <h5 class="SET">SET!<span> NEWS</span></h5>
     </section>
 
     <main class="button-container" style="background-color: lightblue">
+      <p class="choose">Choose a news category to display: </p>
       <div class="wrapper" style="background-color: white">
         <button onclick="buttonHandler('sports')" class="b-plus b-sports">
           Sports
@@ -55,24 +54,18 @@
     </main>
 
     <body class="search" action="">
-      <input class="input" type="text" />
+      <div class="topic-image"></div>
+      <!-- <input class="input" type="text" />
       <label for="News"></label>
       <br />
-      <input type="submit" onclick="retrieve()" />
+      <input type="submit" onclick="retrieve()" /> -->
     </body>
 
-    <div
-      class="news-container"
-      style="
-        background-color: aliceblue;
-        position: absolute;
-        top: 50px;
-      "
-    >
-      <ul class="news-list">
-        <li>TESTING</li>
-      </ul>
-    </div>
+    <main class="search-container">
+      <div class="news-container">
+        <div class="news-list"></div>
+      </div>
+    </main>
 
     <footer class="footer">
       <p class="footnote">Created by Rong Feng Ye © October 2020</p>

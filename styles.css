@@ -13,11 +13,10 @@ div {
 }
 .news-container {
   position: relative;
-  top: 50px;
 }
 .news-list {
   position: relative;
-  top: 50x;
+  top: 100x;
 }
 .container {
   position: relative;
@@ -44,6 +43,13 @@ div {
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
+}
+.choose {
+  margin: auto;
+  display:block;
+  text-align: center;
+  font-size: 24px;
+  /* font-family: "Lucida Console", Courier, monospace; */
 }
 .button-container {
   position: relative;
@@ -78,12 +84,16 @@ div {
   background-color: rgb(99,189,154);
 }
 .wrapper {
-  width: 100%;
+  width: 80%;
   height: 150px;
-  border: 1px solid black;
+  margin: 0 7.5vw;
+  /* border: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.search-container {
+  border: 1px solid black;
 }
 .footer {
   position: absolute;
