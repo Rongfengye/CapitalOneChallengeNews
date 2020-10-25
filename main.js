@@ -12,11 +12,11 @@ const apiData = {
   apiK: "apiKey=3680b889e3fe4c128f994a74da6f98db",
 }
 
-const banners = {
-  sportB: "pictures/sport-banner.jpg",
-  eB: "pictures/entertainment-banner.jpg",
-  techB: "pictures/tech-banner.jpg"
-}
+// const banners = {
+//   sportB: "pictures/sport-banner.jpg",
+//   eB: "pictures/entertainment-banner.jpg",
+//   techB: "pictures/tech-banner.jpg"
+// }
 
 const proxyUrl = "http://cors-anywhere.herokuapp.com/"
 
@@ -35,7 +35,7 @@ function buttonHandler(topic) {
   newsList.innerHTML = ''
 
   const {url, lan, cate, apiK} = apiData;
-  const apiUrl = `${url}${lan}${cate}${apiK}`;
+  const apiUrl = `${proxyUrl}${url}${lan}${cate}${apiK}`;
   console.log(apiUrl);
 
   fetch(apiUrl)
