@@ -6,7 +6,7 @@ const topicImage = document.querySelector(".topic-image");
 //searchFrom.addEventListener("submit", retrieve);
 
 const apiData = {
-  url: "http://newsapi.org/v2/top-headlines?",
+  url: "https://newsapi.org/v2/top-headlines?",
   lan: "country=us&language=en&",
   cate: "",
   apiK: "apiKey=3680b889e3fe4c128f994a74da6f98db",
