@@ -13,9 +13,9 @@ const apiData = {
 }
 
 const banners = {
-  sportB = "pictures/sport-banner.jpg",
-  eB = "pictures/entertainment-banner.jpg",
-  techB = "pictures/tech-banner.jpg"
+  sportB: "pictures/sport-banner.jpg",
+  eB: "pictures/entertainment-banner.jpg",
+  techB: "pictures/tech-banner.jpg"
 }
 
 const proxyUrl = "http://cors-anywhere.herokuapp.com/"
@@ -55,20 +55,11 @@ function buttonHandler(topic) {
         i.setAttribute('src', `${article.urlToImage}`);
         i.setAttribute('alt', "News-image");
         D.setAttribute('style', 'padding-top: 20px; margin: 50px;');
-        //D.style.listStyleImage = article.urlToImage;
-        //li.setAttribute('list-style-image', `url(${article.urlToImage})`);
         D.appendChild(a);
         D.appendChild(i);
         console.log(D);
         newsList.appendChild(D);
       })
     })
-
-  // console.log(topic);
-  // const {url, lan, cate, apiK} = apiData;
-  // console.log("this is link", `${url}${lan}${cate}${apiK}`);
 }
 
-
-
-// console.log(apiUrl)
