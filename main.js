@@ -1,9 +1,7 @@
-// from video
 const searchFrom = document.querySelector(".search");
 const input = document.querySelector(".input");
 const newsList = document.querySelector(".news-list");
 const topicImage = document.querySelector(".topic-image");
-//searchFrom.addEventListener("submit", retrieve);
 
 const apiData = {
   url: "http://newsapi.org/v2/top-headlines?",
