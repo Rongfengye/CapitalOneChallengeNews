@@ -115,6 +115,10 @@ a:hover, a:link, a:active
   margin-top: 0;
   background-color: rgb(241,241,241);
 }
+.news-date {
+  float: right;
+  color: rgb(10,43,100);
+}
 a:visited {
   text-decoration: none;
   color: rgb(102,0,153);
