@@ -8,7 +8,7 @@ const apiData = {
   lan: "country=us&language=en&",
   cate: "",
   // apiK: "apiKey=3680b889e3fe4c128f994a74da6f98db",
-  apiK : "78b9d599c4f94f8fa3afb1a5458928d6",
+  apiK : "apiKey=78b9d599c4f94f8fa3afb1a5458928d6",
 };
 
 var months = [
