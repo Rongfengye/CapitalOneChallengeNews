@@ -26,6 +26,7 @@ var months = [
   "December",
 ];
 
+// const proxyUrl = "http://cors-anywhere.herokuapp.com/";
 const proxyUrl = "";
 
 function buttonHandler(topic) {
