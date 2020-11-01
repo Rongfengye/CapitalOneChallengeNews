@@ -33,6 +33,13 @@ var months = [
 
 function retrieve(e) {
   e.preventDefault()
+  if (currTopic === "") {
+    document.getElementById("error-handle").innerHTML = 
+    "Choose one of the three categories first!";
+  } else {
+    document.getElementById("error-handle").innerHTML = 
+    "";
+  }
   apiData.q = `q=${input.value}&`;
   console.log("input value",apiData.q);
   console.log("topic ",currTopic);

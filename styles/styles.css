@@ -18,8 +18,16 @@
   position: absolute;
   top: 250px;
   left: 10vw;
-  color: red;
+  color: black;
   font-size: 1vw;
+  z-index: 1;
+}
+.error-handle {
+  position: absolute;
+  top: 300px;
+  right: 35vw;
+  color: red;
+  font-size: 0.75vw;
   z-index: 1;
 }
 div {
