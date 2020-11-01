@@ -3,7 +3,7 @@
 
 A simple and easy to use search engine for your dose of breaking news in Sports, Entertainment, or Technology. Choose one of the three categories, use the search bar to specify what you are looking for, and the engine display will all the breaking news you need to stay up to date!
 
-Deployed Website: https://rongfengye.github.io/CaptialOneChallengeNews/ 
+Deployed Website: https://rongfengye.github.io/CapitalOneChallengeNews/ 
 
 # My Solution
 For this MindSumo Challenge, I utilized HTML & CSS to design and format my page, as well as Javascript to make my website interactive and to fetch data from NewsApi. In addition, I used Github pages to deploy my website, the Skeleton library (https://cdnjs.com/libraries/skeleton) to enhance features of my page, and gained inspiration from https://www.youtube.com/watch?v=qx7pSLjLNQA&ab_channel=Divinector to create an animated background.
