@@ -3,13 +3,18 @@ const input = document.querySelector(".input");
 const newsList = document.querySelector(".news-list");
 const topicImage = document.querySelector(".topic-image");
 
+searchFrom.addEventListener('submit', retrieve);
+
 const apiData = {
   url: "https://newsapi.org/v2/top-headlines?",
   lan: "country=us&language=en&",
   cate: "",
-  // apiK: "apiKey=3680b889e3fe4c128f994a74da6f98db",
+  q: "",
+  // apiK: "apiKey=3680b889e3fe4c128f994a74da6f98db", my personal
   apiK : "apiKey=78b9d599c4f94f8fa3afb1a5458928d6",
 };
+
+let currTopic = "";
 
 var months = [
   "January",
@@ -26,13 +31,19 @@ var months = [
   "December",
 ];
 
-// const proxyUrl = "http://cors-anywhere.herokuapp.com/";
-const proxyUrl = "";
+function retrieve(e) {
+  e.preventDefault()
+  apiData.q = `q=${input.value}&`;
+  console.log("input value",apiData.q);
+  console.log("topic ",currTopic);
+  buttonHandler(currTopic);
+}
 
 function buttonHandler(topic) {
   const sportKey = "category=sports&";
   const eKey = "category=entertainment&";
   const techKey = "category=technology&";
+  currTopic = topic;
   if (topic === "sports") {
     apiData.cate = sportKey;
     document.getElementById("topic-image").innerHTML =
@@ -49,10 +60,10 @@ function buttonHandler(topic) {
 
   newsList.innerHTML = "";
 
-  const { url, lan, cate, apiK } = apiData;
-  const apiUrl = `${proxyUrl}${url}${lan}${cate}${apiK}`;
+  const { url, lan, cate, q, apiK } = apiData;
+  const apiUrl = `${url}${lan}${cate}${q}${apiK}`;
   console.log(apiUrl);
-
+  apiData.q = "";
   fetch(apiUrl)
     .then((result) => result.json())
     .then((data) => {

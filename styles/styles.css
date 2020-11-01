@@ -8,6 +8,20 @@
   top: 10%;
   left: 10%;
 }
+.search-bar {
+  position: absolute;
+  top: 250px;
+  right: 15vw;
+  z-index: 1;
+}
+.search-text {
+  position: absolute;
+  top: 250px;
+  left: 10vw;
+  color: red;
+  font-size: 1vw;
+  z-index: 1;
+}
 div {
   background-color: white;
 }
