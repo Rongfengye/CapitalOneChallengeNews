@@ -37,13 +37,12 @@ function retrieve(e) {
     document.getElementById("error-handle").innerHTML = 
     "Choose one of the three categories first!";
   } else {
-    document.getElementById("error-handle").innerHTML = 
-    "";
+    document.getElementById("error-handle").innerHTML = "";
+    apiData.q = `q=${input.value}&`;
+    console.log("input value",apiData.q);
+    console.log("topic ",currTopic);
+    buttonHandler(currTopic);
   }
-  apiData.q = `q=${input.value}&`;
-  console.log("input value",apiData.q);
-  console.log("topic ",currTopic);
-  buttonHandler(currTopic);
 }
 
 function buttonHandler(topic) {
