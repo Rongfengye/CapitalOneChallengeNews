@@ -3,7 +3,6 @@
 
 A simple and easy to use search engine for your dose of breaking news in Sports, Entertainment, or Technology. Choose one of the three categories, use the search bar to specify what you are looking for, and the engine display will all the breaking news you need to stay up to date!
 
-
 Deployed Website: https://rongfengye.github.io/CaptialOneChallengeNews/ 
 
 # My Solution
@@ -33,3 +32,5 @@ Feel free to go above and beyond these requirements as you build your solution! 
 - Clarity
 
 # Demos
+![Demo](pictures/setnewsgif1.gif)
+![Demo](pictures/setnewsgif2.gif)
