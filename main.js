@@ -3,7 +3,7 @@ const input = document.querySelector(".input");
 const newsList = document.querySelector(".news-list");
 const topicImage = document.querySelector(".topic-image");
 
-searchFrom.addEventListener('submit', retrieve);
+searchFrom.addEventListener("submit", retrieve);
 
 const apiData = {
   url: "https://newsapi.org/v2/top-headlines?",
@@ -11,7 +11,7 @@ const apiData = {
   cate: "",
   q: "",
   // apiK: "apiKey=3680b889e3fe4c128f994a74da6f98db", my personal
-  apiK : "apiKey=78b9d599c4f94f8fa3afb1a5458928d6",
+  apiK: "apiKey=78b9d599c4f94f8fa3afb1a5458928d6",
 };
 
 let currTopic = "";
@@ -32,15 +32,15 @@ var months = [
 ];
 
 function retrieve(e) {
-  e.preventDefault()
+  e.preventDefault();
   if (currTopic === "") {
-    document.getElementById("error-handle").innerHTML = 
-    "Choose one of the three categories first!";
+    document.getElementById("error-handle").innerHTML =
+      "Choose one of the three categories first!";
   } else {
     document.getElementById("error-handle").innerHTML = "";
     apiData.q = `q=${input.value}&`;
-    console.log("input value",apiData.q);
-    console.log("topic ",currTopic);
+    console.log("input value", apiData.q);
+    console.log("topic ", currTopic);
     buttonHandler(currTopic);
   }
 }
@@ -86,7 +86,10 @@ function buttonHandler(topic) {
         // News Image
         let i = document.createElement("img");
         i.setAttribute("style", "float:left; width: 100px; height: 50px;");
-        i.setAttribute("src", `${article.urlToImage}`);
+        //i.setAttribute("src", `${article.urlToImage}`);
+        article.urlToImage
+          ? i.setAttribute("src", `${article.urlToImage}`)
+          : i.setAttribute("src", "pictures/news-image.jpg");
         i.setAttribute("alt", "no image available");
         // News Date
         let date = document.createElement("span");
